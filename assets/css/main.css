@@ -2947,9 +2947,11 @@ margin-top: 0px;
   height: 7px;
   opacity: 0;
   background-color: #ff7f50;
+    
 }
 .outer-nav > li.is-active::before {
   opacity: 1;
+  
 }
 @media (max-width: 767px) {
   .outer-nav > li {
