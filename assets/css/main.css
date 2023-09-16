@@ -845,6 +845,140 @@ body {
   background-repeat: no-repeat;
 }
 
+.f1-bk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/1005281-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 5s;
+  animation-name: change;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes change{
+  0%
+  {
+    background-image: url(../img/1005281-1.jpg), url(../img/f2.jpg);
+  }
+  20%
+  {
+    background-image: url(../img/f2.jpg), url(../img/f3.jpg);
+  }
+  40%
+  {
+    background-image: url(../img/f3.jpg), url(../img/f4.jpg);
+  }
+  60%
+  {
+    background-image: url(../img/f4.jpg), url(../img/f5.jpg);
+  }
+  80%
+  {
+    background-image: url(../img/f5.jpg), url(../img/1005281-1.jpg);
+  }
+  100%
+  {
+    background-image: url(../img/1005281-1.jpg);
+  }
+}
+
+.f1 {
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  max-width: 75%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.f1--banner {
+  position: relative;
+  height: 475px;
+}
+.f1--banner h1 {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
+@media (max-height: 500px){
+  .f1--banner{
+    height: 300px;
+    margin-right: 15px;
+  }
+  .f1--banner h1{
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .f1--banner {
+    height: 380px;
+    margin-right: 10px;
+  }
+  .f1--banner h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .f1--banner {
+    height: 305px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .f1--banner h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .f1--banner {
+    height: 360px;
+  }
+  .f1--banner h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 600px) and (max-height: 750px) {
+  .f1--banner {
+    height: auto;
+  }
+  .f1--banner::before,
+  .f1--banner::after {
+    display: none;
+  }
+  .f1--banner h1 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 360px) {
+  .f1--banner h1 {
+    font-size: 27px;
+  }
+}
+
 .evento {
   text-align: right;
   position: relative;
@@ -1036,6 +1170,30 @@ body {
 }
 
 .bodas-bk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/novia-novio-bebiendo-champana-su-boda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bodas1-bk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/IMG_56477.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.servicio-bk {
   position: fixed;
   top: 0;
   left: 0;
@@ -2377,6 +2535,239 @@ input[type=submit] {
   }
 }
 
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width:1200px) {
+  .section-heading{
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 0px;
+  }
+  #tranding .tranding-slider {
+    height: 500px;
+    position: relative;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 600px;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 440px;
+  height: 450px;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 300px !important;
+    height: 450px !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 440px !important;
+    height: 500px !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 440px;
+  height: 500px;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 10.5rem;
+}
+
+
+.food-price {
+  color: #ff7f50;
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  right: 12.5rem;
+  color: white;
+}
+.icono{
+  position: absolute;
+  top: 9rem;
+  right: 12.5rem;
+}
+.food-rating {
+  position: absolute;
+  right: 12.5rem;
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.food-name{
+  margin-left: 50%;
+  margin-right: auto;
+  margin-bottom: 70px;
+  width: 300px;
+}
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+@media (max-height: 700px){
+  .tranding-slide {
+    height: 370px !important;
+  }
+  .food-name{
+    font-size: 20px;
+  }
+  .icono{
+    position: absolute;
+    top: 8rem;
+  }
+  .section-heading {
+    font-size: 28px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+@media (max-width:610px){
+  .section-heading {
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:500px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 90% !important;
+    transform: translateX(-90%) !important;
+  }
+  .food-name{
+    font-size: 20px;
+    margin-left: 70%;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 250px;
+  }
+  .icono{
+    position: absolute;
+    top: 9rem;
+    right: 8rem;
+  }
+  .tranding-slide-content .food-price {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 10% !important;
+    transform: translateX(-10%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #ff7f50;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px #e1dedef1);
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ff7f50;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 32px;
+  margin: 0;
+  padding-bottom: 50px;
+}
 
 .footer{
   background-color: #0000008c;
@@ -2600,7 +2991,7 @@ margin-top: 0px;
   }
   .post:nth-child(2) {
     display: none;
-  }
+  }jpg
   .post {
     width: 100%;
     height: 250px;
@@ -2608,6 +2999,18 @@ margin-top: 0px;
   .post img {
     width: 200px;
   }
+}
+
+.boda-bk{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/IMG_5569.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .work-request {
@@ -2947,11 +3350,9 @@ margin-top: 0px;
   height: 7px;
   opacity: 0;
   background-color: #ff7f50;
-    
 }
 .outer-nav > li.is-active::before {
   opacity: 1;
-  
 }
 @media (max-width: 767px) {
   .outer-nav > li {
