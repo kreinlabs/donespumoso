@@ -224,13 +224,13 @@ html{
   }
 }
 @media (max-width: 500px) {
-  .logos img{
-    width: 90px;
+  .borrar{
+    display: none;
   }
 }
 @media (max-width: 400px) {
   .logos img{
-    width: 70px;
+    width: 90px;
   }
 }
 
