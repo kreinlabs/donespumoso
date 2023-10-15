@@ -635,11 +635,18 @@ html{
   position: sticky;
   align-self: flex-end;
 }
+.whatsapp{
+  width: 40px;
+  margin-left: 10px;
+}
 
 .container{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .btn2 a{
   text-decoration: none;
+}
+.btn2{
+  height: 40px;
 }
