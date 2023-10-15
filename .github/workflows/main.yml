@@ -1,0 +1,24 @@
+name: Desplegar a FTP
+
+on:
+  push:
+    branches:
+      - main  # Cambia 'main' por el nombre de tu rama principal
+
+jobs:
+  despliegue:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del repositorio
+      uses: actions/checkout@v2
+
+    - name: Conectar al servidor FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ${{ secrets.FTP_SERVER }}  # Agrega la dirección del servidor FTP como un secreto en la configuración del repositorio
+        username: ${{ secrets.FTP_USERNAME }}  # Agrega el nombre de usuario del FTP como un secreto en la configuración del repositorio
+        password: ${{ secrets.FTP_PASSWORD }}  # Agrega la contraseña del FTP como un secreto en la configuración del repositorio
+        port: 21
+        local: '.'  # Carpeta local desde donde enviar los archivos, en este caso, la raíz del repositorio
+        remote: '/'  # Ruta en el servidor FTP donde deseas enviar los archivos
