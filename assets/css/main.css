@@ -117,6 +117,10 @@ a:hover{
   justify-content: center;
   flex-direction: column;
 }
+
+.columna-1{
+  max-width: 800px
+}
 .intro-slideshow1 img {
   position: absolute;
   top: 0;
@@ -152,6 +156,9 @@ a:hover{
 }
 .row-a{
   position: absolute;
+  display: flex;
+  justify-content: center;
+  max-width: 100% !important;
 }
 html{
   scroll-snap-type: y mandatory;
@@ -189,12 +196,14 @@ html{
     fill: black;
 }
 .logos{
+  margin-top: 70px;
   display: flex;
   background-color: #000000d0;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 15px;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .logos img{
   filter: brightness(0) invert(1);
@@ -650,3 +659,14 @@ html{
 .btn2{
   height: 40px;
 }
+.myBtn{
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+#more {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}

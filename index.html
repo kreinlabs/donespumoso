@@ -58,19 +58,23 @@
         </div>
       </div>
       <div class="row row-a">
-        <div class="column">
+        <div class="column columna-1">
           <h2 class="t2">
             Los mejores eventos
           </h2>
           <p class="p2">
             Creamos momentos únicos que no olvidarás
           </p>
-          <div class="logos">
-            <img src="assets/img/logitech-2.svg" alt="">
-            <img src="assets/img/estee-lauder-3.svg" alt="">
-            <img src="assets/img/absolut-vodka.svg" alt="">
-            <img src="assets/img/logotipo-de-iberia.svg" alt="">
-          </div>
+          <p class="p2">
+            Creatividad, originalidad y diversión. Bienvenido a Don Espumoso, la agencia de organización de eventos<span id="dots">... <a onclick="myFunction()" id="myBtn" class="myBtn">Leer más</a></span><span id="more">
+            empresariales que hará que vivas en una experiencia 360º. ¿Estás preparado? Contamos con más de 10 años de experiencia en organizar eventos de todo tipo. Junto a nosotros tu idea se hará, por fin, realidad. <a onclick="myFunction()" id="myBtn" class="myBtn">Leer menos</a></span>
+          </p>
+        </div>
+        <div class="logos">
+          <img src="assets/img/logitech-2.svg" alt="">
+          <img src="assets/img/estee-lauder-3.svg" alt="">
+          <img src="assets/img/absolut-vodka.svg" alt="">
+          <img src="assets/img/logotipo-de-iberia.svg" alt="">
         </div>
       </div>
     </div>
@@ -83,6 +87,11 @@
           </h2>
           <p class="p2">
             Siéntelo, hazlo realidad y disfrútalo por todo lo alto.<br> Ideas de eventos corporativos para todos los gustos, estilos y con personalidad propia.
+          </p>
+          <p class="p2">
+            ¡Lo hacemos que parezca muy fácil! Cuéntanos que quieres hacer y nosotros nos encargamos del resto.<span id="dots2">.. <a onclick="myFunction2()" id="myBtn2" class="myBtn">Leer más</a></span><span id="more2">
+            Te guiamos, paso a paso, <br> en la selección del espacio, el catering de eventos, las actividades, el alojamiento, los recursos audiovisuales y muchas sorpresas más. <br>
+            Desde la organización de convenciones y congresos hasta inauguraciones y fiestas especiales. ¿Cómo quieres sorprender a tu equipo? <br> Superaremos todas tus expectativa.<a onclick="myFunction2()" id="myBtn2" class="myBtn">Leer menos</a></span>
           </p>
         </div>
       </div>
@@ -97,6 +106,10 @@
           <p class="p2">
             Expertos en convertir ideas en auténticas fiestas privadas que marcarán la diferencia.
           </p>
+          <p class="p2">
+            ¿Cansado de los eventos tradicionales? En Don Espumoso sacamos nuestro lado más creativo con ideas frescas <span id="dots3">... <a onclick="myFunction3()" id="myBtn3" class="myBtn">Leer más</a></span><span id="more3"> y originales con las que sorprenderte a ti y a todos tus invitados. Cenas de empresa, celebraciones privadas, fiestas de empresas y muchos eventos más.
+            Como agencia de eventos estamos especializados en organizar fiestas privadas en cualquier ciudad de España. Dinos qué te gustaría hacer y nosotros hacemos que este proyecto sea único y especial. Te daremos una propuesta adaptada a ti, cuidando hasta el más mínimo de los detalles.<a onclick="myFunction3()" id="myBtn3" class="myBtn">Leer menos</a></span>
+          </p>
         </div>
       </div>
     </div>
@@ -110,6 +123,13 @@
           <p class="p2">
             Si lo has soñado, es hora de hacerlo realidad. <br> El día más feliz se acerca y en Don Espumoso sabemos cómo conseguir <br> que este momento sea inolvidable en tu vida.
           </p>
+          <p class="p2">
+            ¿Estás lista para romper y hacer que tu boda sea única y mágica? Nuestro equipo de mentes creativas<span id="dots4">... <a onclick="myFunction4()" id="myBtn4" class="myBtn">Leer más</a></span><span id="more4"> te sorprenderá y te hará superar todas tus expectativas.
+
+Celebrar bodas es fácil, pero organizar bodas como Don Espumoso es imposible. Como agencia especializada en bodas y celebraciones contamos con un ADN especial a la hora de seleccionar el espacio, el catering, la decoración, y un sinfín de servicios más.
+
+Tus propios wedding planner con los que compartirás una experiencia inigualable antes y durante tu celebración.<a onclick="myFunction4()" id="myBtn4" class="myBtn">Leer menos</a></span>
+          </p>
         </div>
       </div>
     </div>
@@ -122,6 +142,12 @@
           </h2>
           <p class="p2">
             Desafía la realidad y haz que tu evento corporativo sea el más comentado del año <br> gracias a estas fincas y espacios habilitados para ello.
+          </p>
+          <p class="p2">
+            
+Da igual si celebras tu boda como cualquier otro tipo de evento, en Don Espumoso contamos con<span id="dots5">.. <a onclick="myFunction5()" id="myBtn5" class="myBtn">Leer más</a></span><span id="more5"> un espacio en exclusiva para ti donde cumplir cada uno de tus deseos: la Finca Feligrés. Un lugar en un entorno natural único para disfrutar de una gran experiencia.
+
+La Finca Feligrés cuenta con diferentes ambientes para celebrar bodas en Madrid y ceremonias particulares en mitad del campo. A tan solo 20 minutos del centro de la capital y con una decoración que te dejará impresionado.<a onclick="myFunction5()" id="myBtn5" class="myBtn">Leer menos</a></span>
           </p>
         </div>
       </div>
@@ -329,6 +355,73 @@
 
     window.addEventListener("scroll", toggleActiveClass);
     window.addEventListener("load", toggleActiveClass);
+  </script>
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
   </script>
 </body>
 
