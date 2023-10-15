@@ -81,7 +81,7 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .navbar{
     background-color: black;
-    scroll-snap-align: start;
+    height: 70px;
 }
 .navbar-brand{
     width: 240px;
@@ -89,6 +89,9 @@ p,h1,h2,h3,h4,h5,h6,a{
     align-items: center;
     color: #fff;
     padding-left: 20px;
+}
+.sticky-top{
+  padding: 0%;
 }
 a{
     color: white;
@@ -100,31 +103,32 @@ a:hover{
     color: white;
 }
 
+.divider{
+  height: 10px;
+  background-color: black;
+}
+
 .content0{
   scroll-snap-align: start;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
 .intro-slideshow1 img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
-  height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+  height: 100vh; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
   object-fit: cover;
   z-index:-1;
   opacity: 0;
   transition: opacity 0.75s ease-in-out;
 }
-/* .intro-slideshow img:first-child {
-  display: block;
-  opacity: 1;
-} */
+
 .intro .intro-header {
   border-radius: 0.5rem;
   padding: 2rem 2.5rem;
@@ -132,26 +136,34 @@ a:hover{
 }
 
 .carousel-item{
-    height: 100%;
+    height: 100vh;
 }
 .carousel-item img{
     object-fit: cover;
-    max-height: 700px;
+    height: 100vh;
 }
 .carousel{
     scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
 }
-
+.carousel-inner{
+  height: 100vh;
+}
+.row-a{
+  position: absolute;
+}
+html{
+  scroll-snap-type: y mandatory;
+  scroll-padding: none;
+}
 .wrapper{
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-padding: none;
+    
 }
 @media (max-width: 700px) {
-  .wrapper{
-    height: 100vh;
-    overflow-y: scroll;
+  html {
     scroll-snap-type: y proximity;
 }
   
@@ -176,11 +188,46 @@ a:hover{
 .custom-shape-divider-bottom-1696347494 .shape-fill {
     fill: black;
 }
+.logos{
+  display: flex;
+  background-color: #000000d0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  justify-content: center;
+}
+.logos img{
+  filter: brightness(0) invert(1);
+  filter: contrast(0.5);
+  width: 150px;
+  padding-left: 30px;
+}
+@media (max-width: 1000px) {
+  .logos img{
+    width: 150px;
+  }
+}
+@media (max-width:750px){
+  .logos img{
+    width: 120px;
+  }
+}
+@media (max-width: 500px) {
+  .logos img{
+    width: 90px;
+  }
+}
+@media (max-width: 400px) {
+  .logos img{
+    width: 70px;
+  }
+}
+
 .content1{
     scroll-snap-align: start;
     background-image: url("/assets/img/byw-sala-espera-monitores.jpg");
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,11 +245,21 @@ a:hover{
     text-align: center;
     padding: 0%;
 }
+.t3{
+  font-size: 50px !important;
+}
 .t2{
-    font-size: 60px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.t2.animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 .p2{
   font-size: 18px;
@@ -215,20 +272,12 @@ a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 750px){
-  .t2{
-    font-size: 40px;
-  }
-  .p2{
-    font-size: 14px;
-  }
-}
 
 .content2{
     scroll-snap-align: start;
     background-image: url("/assets/img/low-Foto\ 6-11-21\ 19\ 27\ 35-min.jpg");
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +287,7 @@ a:hover{
     scroll-snap-align: start;
     background-image: url("/assets/img/byw-novia-novio-bebiendo-champana-su-boda.jpg");
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +297,7 @@ a:hover{
     scroll-snap-align: start;
     background-image: url("/assets/img/1005281-1.jpg");
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +307,7 @@ a:hover{
     scroll-snap-align: start;
     background-color: black;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,7 +321,7 @@ a:hover{
 .content6{
     scroll-snap-align: start;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,7 +359,7 @@ a:hover{
     scroll-snap-align: start;
     background-color: black;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,17 +368,32 @@ a:hover{
   .slide-container{
     max-width: 1120px;
     width: 100%;
-    padding: 40px 0;
+    margin-bottom: -30px;
   }
+ @media (max-width: 670px) {
+  .slide-container{
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 655px) {
+  .slide-container{
+    margin-bottom: -60px;
+  }
+  .slide-content{
+    margin-bottom: -10px;
+  }
+}
   .slide-content{
     margin: 0 40px;
     overflow: hidden;
     border-radius: 25px;
     padding-bottom: 20px;
+    max-height: 450px;
   }
   .card{
     border-radius: 25px;
     background-color: #FFF;
+    max-height: 450px;
   }
   .image-content,
   .card-content{
@@ -440,13 +504,12 @@ a:hover{
   scroll-snap-align: start;
   background-color: black;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
 .form-label{
   color: white;
 }
@@ -455,9 +518,16 @@ a:hover{
   background-color: #803F28;
   border-color: #803F28;
 }
+.btn2{
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
 .row2{
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: -20px;
 }
 .col1{
   max-width: 50%;
@@ -508,20 +578,26 @@ a:hover{
   }
 }
 @media (max-width: 700px){
+  .t8{
+    margin-top: 70px;
+  }
   .content8{
     height: auto;
     scroll-snap-align: start;
   }
   .row2{
     display: block;
+    margin-bottom: 40px;
   }
   .col1{
     max-width: 100%;
     width: auto;
+    padding: 20px;
   }
   .col2{
     max-width: 100%;
     width: auto;
+    padding: 20px;
   }
   .mapaL{
     opacity: 1;
@@ -546,4 +622,24 @@ a:hover{
     opacity: 1;
     display: block;
   }
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-end;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+.btn2 a{
+  text-decoration: none;
 }
