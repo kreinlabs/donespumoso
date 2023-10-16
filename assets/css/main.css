@@ -264,6 +264,7 @@ html{
 }
 .t3{
   font-size: 50px !important;
+  margin-top: 40px;
 }
 .t2{
   font-size: 60px;
@@ -680,6 +681,24 @@ html{
   border-radius: 5px;
   padding: 5px;
 }
+
+@media (max-width:550px){
+  .footer{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: -30px;
+    position: relative;
+    scroll-snap-align: end;
+    padding-bottom: 20px;
+  }
+  .container p{
+    font-size: 12px;
+  }
+}
 #more {display: none;}
 #more2 {display: none;}
 #more3 {display: none;}
@@ -693,6 +712,7 @@ html{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  bottom: auto;
 }
 .contentb1{
   scroll-snap-align: start;
