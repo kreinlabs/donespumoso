@@ -293,6 +293,11 @@ html{
     font-size: 30px !important;
   }
 }
+@media (max-width: 500px){
+  .t2{
+    font-size: 40px;
+  }
+}
 
 .content2{
     scroll-snap-align: start;
@@ -553,7 +558,7 @@ html{
 .row2{
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 .col1{
   max-width: 50%;
