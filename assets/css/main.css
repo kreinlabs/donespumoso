@@ -167,21 +167,18 @@ a:hover{
   max-width: 100% !important;
   width: 100%;
 }
+body{
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+  -webkit-text-size-adjust:none;
+}
 html{
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-padding: none;
-}
-.wrapper{
-    height: 100vh;
-    overflow-y: scroll;
-    
-}
-@media (max-width: 700px) {
-  html {
-    scroll-snap-type: y proximity;
+  height: 100%;
 }
   
-}
+
 .custom-shape-divider-bottom-1696347494 {
     position: absolute;
     bottom: 0;
@@ -219,22 +216,22 @@ html{
   width: 150px;
   padding-left: 30px;
 }
-@media (max-width: 1000px) {
+@media screen and (max-device-width: 1000px) {
   .logos img{
     width: 150px;
   }
 }
-@media (max-width:750px){
+@media screen and (max-device-width:750px){
   .logos img{
     width: 120px;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
   .borrar{
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media screen and (max-device-width: 400px) {
   .logos img{
     width: 90px;
   }
@@ -282,7 +279,7 @@ html{
 .p2{
   font-size: 18px;
 }
-@media (max-width: 750px) {
+@media screen and (max-device-width: 750px) {
   .t2{
     font-size: 50px;
   }
@@ -293,7 +290,7 @@ html{
     font-size: 30px !important;
   }
 }
-@media (max-width: 500px){
+@media screen and (max-device-width: 500px){
   .t2{
     font-size: 40px;
   }
@@ -401,12 +398,12 @@ html{
     width: 100%;
     margin-bottom: -30px;
   }
- @media (max-width: 670px) {
+ @media screen and (max-device-width: 670px) {
   .slide-container{
     margin-bottom: -40px;
   }
 }
-@media (max-width: 655px) {
+@media screen and (max-device-width: 655px) {
   .slide-container{
     margin-bottom: -60px;
   }
@@ -590,7 +587,7 @@ html{
   display: none;
 }
 
-@media (max-width: 930px) {
+@media screen and (max-device-width: 930px) {
   .col1{
     max-width: 50%;
     width: 350px;
@@ -608,7 +605,7 @@ html{
     display: block;
   }
 }
-@media (max-width: 700px){
+@media screen and (max-device-width: 700px){
   .t8{
     margin-top: 70px;
   }
@@ -642,7 +639,7 @@ html{
   
 }
 
-@media (max-width: 450px){
+@media screen and (max-device-width: 450px){
   .form-c5{
     width: 300px;
   }
@@ -688,7 +685,7 @@ html{
   padding: 5px;
 }
 
-@media (max-width:550px){
+@media screen and (max-device-width:550px){
   /*.footer{
     background-color: black;
     width: 100%;
@@ -1012,7 +1009,7 @@ html{
 .ts{
   font-size: 50px;
 }
-@media (max-width: 750px) {
+@media screen and (max-device-width: 750px) {
   .ts{
     margin-top: 70px;
     font-size: 30px;
@@ -1077,7 +1074,7 @@ html{
   flex-direction: column;
 }
 
-@media (max-width: 700px){
+@media screen and (max-device-width: 700px){
   .contentf8{
     height: auto;
     scroll-snap-align: start;
