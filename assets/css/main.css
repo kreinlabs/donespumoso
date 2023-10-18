@@ -78,7 +78,9 @@ p,h1,h2,h3,h4,h5,h6,a{
 .navbar-toggler.collapsed .toggler-icon {
     background-color: white;
 }
-
+.logo{
+  width: 100%;
+}
 .navbar{
     background-color: black;
     height: 70px;
