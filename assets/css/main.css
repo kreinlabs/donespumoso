@@ -82,11 +82,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   width: 100%;
 }
 .navbar{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     height: 70px;
 }
 .nav-link.active{
-  color: #ff7f50;
+  color: black;
 }
 .navbar-brand{
     width: 240px;
@@ -149,6 +149,7 @@ a:hover{
 
 .carousel-item{
     height: 100vh;
+    object-fit: cover;
 }
 .carousel-item img{
     object-fit: cover;
@@ -247,11 +248,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     flex-direction: column;
 }
 .row{
-  max-width: 90%;
+  max-width: 100%;
 }
 .row1{
 
@@ -443,7 +443,7 @@ html{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #ff7f50;
+    background-color: #ffa17f;
     border-radius: 25px 25px 0 25px;
   }
   .overlay::before,
@@ -454,7 +454,7 @@ html{
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #ff7f50;
+    background-color: #ffa17f;
   }
   .overlay::after{
     border-radius: 0 25px 0 0;
@@ -473,7 +473,7 @@ html{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #ff7f50;
+    border: 4px solid #ffa17f;
   }
   .name{
     font-size: 18px;
@@ -541,12 +541,12 @@ html{
   flex-direction: column;
 }
 .form-label{
-  color: white;
+  color: black;
 }
 
 .btn{
-  background-color: #803F28;
-  border-color: #803F28;
+  background-color: #7f2200 ;
+  border-color: #7f2200 ;
 }
 .btn2{
   background-color: #ff7f50;
@@ -577,7 +577,7 @@ html{
 }
 .form-c5{
   width: 400px;
-  background-color: #ff7f50;
+  background-color: #ffa17f  ;
   padding: 10px;
   border-radius: 10px;
 }
@@ -1093,4 +1093,41 @@ html{
     height: auto;
     scroll-snap-align: start;
   }
+}
+
+/* ---------
+------ esp-nuevo ------
+   --------- */
+.esp-titulo{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 60px;
+  text-shadow: 3px 3px 4px rgba(127, 34, 0, 1);
+}
+.esp-esp{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 50px;
+  text-shadow: 3px 3px 4px rgba(127, 34, 0, 1);
+  margin-top: 40px;
+}
+.esp-esp a, a:visited{
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #7f2200;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.esp-esp a:hover{
+  box-shadow: inset 700px 0 0 0 #7f2200;
+  color: white;
+  z-index: 2;
+  
+}
+.esp-last{
+  margin-bottom: 40px;
 }
